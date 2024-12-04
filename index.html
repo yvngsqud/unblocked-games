@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝖈𝖏𝖘 𝖌𝖆𝖒𝖊𝖘</title>
+    <link rel="icon" type="images/" href="images/favicon.ico">
+    <a href="code/dark mode.html">go 2 settings</a>
+
+    <button onclick="playSound()">Play Music</button>
+    <iframe 
+      id="soundcloud" 
+      width="0" 
+      height="0" 
+      style="display: none;" 
+      frameborder="no" 
+      allow="autoplay" 
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1594803882&color=%23918cac&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"">
+    </iframe>
+    
+    <script>
+      function playSound() {
+        const iframe = document.getElementById('soundcloud');
+        const src = iframe.src;
+        iframe.src = ''; // Reset the iframe
+        iframe.src = src; // Reload it to trigger autoplay
+      }
+    </script>
+    
+
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://giffiles.alphacoders.com/212/212876.gif');
+            background-size: cover;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #111;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .navbar .logo h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .navbar .links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .navbar .links a:hover,
+        .navbar .links .active {
+            background-color: #007BFF; /* Highlight color */
+            color: white;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/favicon.ico" alt="Logo">
+            <h1>𝖈𝖏𝖘 𝖌𝖆𝖒𝖊𝖘</h1>
+        </div>
+        <div class="links">
+            <a href="#" class="active">Home</a>
+            <a href="games.html">List Of Games</a>
+            <a href="apps.html">Unblocked Apps</a>
+            <a href="idk/search.html">Information</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; "The games on this website are not mine! They're added into an unblocker :D" - CJ 2024</p>
+    </footer>
+</body>
+</html>
